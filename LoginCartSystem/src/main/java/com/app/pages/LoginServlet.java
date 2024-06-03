@@ -63,6 +63,9 @@ public class LoginServlet extends HttpServlet {
 			}else {
 				Cookie c1 = new Cookie ("user_id", ((Integer)user.getId()).toString());
 				Cookie c2 = new Cookie("user_email", user.getUsername());
+				
+				response.addCookie(c1);
+				response.addCookie(c2);
 			}
 		} catch (Exception e) {
 			throw new ServletException("in do Post "+ getClass(), e);
