@@ -7,11 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h4>Successful Login !!!</h4>
-<h4>JSession Id : ${cookie.JSESSIONID.value}</h4>
-<h5>User Details : ${sessionScope.user_details}</h5>
-<h5>
-	<a href="logout.jsp">Log Out</a>
-</h5>
+	<h5>Session Id : ${cookie.JSESSIONID.value}</h5>
+	<%-- <%= session.getId() %>--%>
+	<h5><a href="login.jsp">User Login</a></h5>
+	<h5>
+		<a href="test1.jsp">Error Handling in JSP</a>
+	</h5>
 </body>
 </html>

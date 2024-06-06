@@ -7,11 +7,8 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h4>Successful Login !!!</h4>
-<h4>JSession Id : ${cookie.JSESSIONID.value}</h4>
-<h5>User Details : ${sessionScope.user_details}</h5>
-<h5>
-	<a href="logout.jsp">Log Out</a>
-</h5>
+<h5>From the included page</h5>
+<%-- try to access a page scoped attribute using EL--%>
+<h5>Value : ${pageScope.server_ts}</h5>
 </body>
 </html>

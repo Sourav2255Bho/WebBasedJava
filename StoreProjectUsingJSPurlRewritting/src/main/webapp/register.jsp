@@ -7,11 +7,6 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h4>Successful Login !!!</h4>
-<h4>JSession Id : ${cookie.JSESSIONID.value}</h4>
-<h5>User Details : ${sessionScope.user_details}</h5>
-<h5>
-	<a href="logout.jsp">Log Out</a>
-</h5>
+Page Under Construction
 </body>
 </html>

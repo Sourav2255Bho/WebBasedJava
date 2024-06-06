@@ -35,11 +35,9 @@ if(validatedUser != null)
 	{
 		//valid login : store user details uder session scope
 		session.setAttribute("user_details", validatedUser);
-		//clnt pull II : redirect 
-		//response.sendRedirect("details.jsp");
-		//Server Pull : Forward
-		RequestDispatcher rd = request.getRequestDispatcher("details.jsp");
-		rd.forward(request, response);
+		//clnt pull II : redirect + URL rewritting
+		//Method of HttpServletResponse : public String encodeRedirectURL(String url)
+		response.sendRedirect(response.encodeRedirectURL("details.jsp"));
 	}else{
 		%>
 		<h5> 

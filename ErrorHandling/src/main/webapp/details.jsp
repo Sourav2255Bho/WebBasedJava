@@ -7,11 +7,14 @@
 <title>Insert title here</title>
 </head>
 <body>
+<h4>Session Id : ${cookie.JSESSIONID.value}</h4>
 <h4>Successful Login !!!</h4>
-<h4>JSession Id : ${cookie.JSESSIONID.value}</h4>
 <h5>User Details : ${sessionScope.user_details}</h5>
+<%
+String encodedURL = response.encodeURL("logout.jsp");
+%>
 <h5>
-	<a href="logout.jsp">Log Out</a>
+	<a href="<%= encodedURL %>">Log Out</a>
 </h5>
 </body>
 </html>

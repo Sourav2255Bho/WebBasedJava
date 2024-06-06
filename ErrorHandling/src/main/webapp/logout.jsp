@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<h5>Session Id : <%= session.getId() %></h5>
+<h5>Session Id : ${cookie.JSESSIONID.value}</h5>
 <%-- session.getAttribute("user_details").getUserName() sent to clnt using the out.print --%>
 <h4>Hello, ${sessionScope.user_details.name}</h4>
 <% session.invalidate(); %>
